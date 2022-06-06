@@ -4,7 +4,7 @@ body{
 }
 
 .firstd{
-	height:712px;
+	height:745px;
 	font-family: Tapestry;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -103,13 +103,12 @@ bottom: 85px;
 }
 
 .about2{
-  position:relative;
-  left:20%;
+  transform: translate(25%,0%);
 }
 .section-title, .section-subtitle{
 	text-align: center;
   position: relative;
-	
+
 }
 
 .section-title{
@@ -145,7 +144,7 @@ bottom: 85px;
 .services__content{
   text-align: center;
   position: relative;
-	
+
 }
 
 .services__img{

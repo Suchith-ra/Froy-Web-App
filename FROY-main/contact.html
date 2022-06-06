@@ -86,7 +86,7 @@
   }
 
   .first{
-    background:linear-gradient(rgba(0,0,0,0.7),  rgba(0,0,0,0)), url('https://cdn.cnn.com/cnnnext/dam/assets/200120161356-cnn-worlds-best-new-restaurants---madera---simon-brown-photography-1-1-full-169.jpg');
+    background:linear-gradient(rgba(0,0,0,0.7),  rgba(0,0,0,0.5)), url('https://cdn.cnn.com/cnnnext/dam/assets/200120161356-cnn-worlds-best-new-restaurants---madera---simon-brown-photography-1-1-full-169.jpg');
     background-image: cover;
     height:710px;
     color: white;
@@ -94,7 +94,7 @@
   }
 
   .inside-contact{
-    background: rgba(0, 0, 0, 0.7);
+
     width:500px;
     height: 80%;
     position: relative;
@@ -109,7 +109,7 @@
     text-align:center;
     margin-top:50px;
     padding-top: 5px;
-}
+    }
 .inside-contact h3{
     text-align:center;
     font-size:16px;
@@ -118,7 +118,7 @@
 }
 .inside-contact input, .inside-contact textarea{
     width:80%;
-    background-color:rgba(255,255,255,0.8);
+    background-color:rgba(255,255,255,0.9);
     border:1px solid rgba(0,0,0,0.48);
     padding:5px 10px;
     margin: 15px;
@@ -144,6 +144,7 @@
   right: 73px;
   bottom: 30px;
 }
+
 .navbar{
 	width: auto;
 	float: right;
@@ -179,36 +180,45 @@
 	padding-left:80px;
 
 }
-
+#cont{
+  position: relative;
+  left:140px;
+}
+#btn_send{
+  background: yellow;
+}
   </style>
 </head>
 <body>
   <section class="first">
     <nav class="navbar">
   		<ul type="none">
-  			<li><a href="froy.html">Home</a></li>
+  			<li><a href="index.html">Home</a></li>
   			<li><a href="Menu.html">Menu</a></li>
   			<li><a href="Order.html;">Order Online</a></li>
   			<li><a href="login.html">Login</a></li>
   			<li><a href="Contact.html">Contact Us</a></li>
   		</ul>
-  </nav>
+</nav>
     <div class="inside-contact">
-            <h2><center>Contact Us</center></h2>
+      <span id="cont">
+            <h2>Contact Us</h2></span>
             <h3>
                <span id="confirm">
             </h3>
+            <form id="contact-form" method="post" action="">
             <p>Name *</p>
             <input id="txt_name" type="text" Required="required">
             <p>Email *</p>
-            <input id="txt_email" type="text" Required="required">
+            <input id="txt_email" type="email" Required="required">
             <p>Phone *</p>
-            <input id="txt_phone" type="text" Required="required">
-            <p>Subject *</p>
-            <input id="txt_subject" type="text" Required="required">
+            <input id="txt-phone" "type="text" name="Phone Number" pattern="[7-9]{1}[0-9]{9}"
+                   title="Phone number with 7-9 and remaining 9 digit with 0-9">
+            
             <p>Message *</p>
             <textarea id="txt_message" rows="4" cols="20" Required="required" ></textarea>
-            <input type="submit" id="btn_send" value="SEND">
+            <input type="submit" class="contact-form" id="btn_send" value="SEND">
+          </form>
          </div>
       <div class="logo">
         <img id="image" src="images\canvas.png" >
